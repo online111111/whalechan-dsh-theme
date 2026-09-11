@@ -1,0 +1,42 @@
+# Operating system / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.backup
+*.whalechan-backup
+*.whalechan-clean-backup
+index.html.whalechan-*
+
+# Browser profiles, runtime captures and audits
+.edge-profile*/
+.browser-profile*/
+*.har
+*dom*.html
+*audit*.json
+*audit*.txt
+*capture*.png
+*screenshot*.png
+*-snapped.png
+*-test.png
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Node / build caches (the release ships prebuilt theme assets)
+node_modules/
+dist/
+.cache/

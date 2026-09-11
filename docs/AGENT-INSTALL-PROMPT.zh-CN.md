@@ -11,7 +11,7 @@ https://github.com/online111111/whalechan-dsh-theme
 执行要求：
 1. 先检查当前操作系统、工作目录、Git 和 PowerShell 是否可用；使用 pwd/Get-Location 确定实际目录，不要根据示例猜测路径。
 2. 将仓库克隆到一个合适的普通目录；如果本地已经存在仓库，先检查 Git 状态和 origin，只在工作区干净且远程正确时使用 git pull --ff-only。不要覆盖我的其他文件或强制重置。
-3. 阅读 README.zh-CN.md、install.ps1、verify.ps1、uninstall.ps1 和 scripts/Theme.Common.ps1，确认安装只涉及静态 Web 前端后再执行。
+3. 阅读 README.md、install.ps1、verify.ps1、uninstall.ps1 和 scripts/Theme.Common.ps1，确认安装只涉及静态 Web 前端后再执行。
 4. 在 Windows PowerShell 中仅为当前进程设置执行策略：
    Set-ExecutionPolicy -Scope Process Bypass
    然后运行 .\install.ps1。

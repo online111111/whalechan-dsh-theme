@@ -11,7 +11,7 @@ Goal: safely install the theme into the DeepSeek Harness Web GUI that I actually
 Requirements:
 1. Inspect the operating system, current working directory, Git, and PowerShell first. Determine real paths with pwd/Get-Location; do not infer them from examples.
 2. Clone the repository into a suitable normal directory. If it already exists, inspect its Git status and origin. Use git pull --ff-only only when the worktree is clean and the remote is correct. Never overwrite unrelated files or force-reset local changes.
-3. Read README.md, install.ps1, verify.ps1, uninstall.ps1, and scripts/Theme.Common.ps1 before execution. Confirm that installation affects only static Web frontend files.
+3. Read README.en.md, install.ps1, verify.ps1, uninstall.ps1, and scripts/Theme.Common.ps1 before execution. Confirm that installation affects only static Web frontend files.
 4. On Windows, set the execution policy only for the current PowerShell process:
    Set-ExecutionPolicy -Scope Process Bypass
    Then run .\install.ps1.

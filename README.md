@@ -61,7 +61,11 @@ https://github.com/online111111/whalechan-dsh-theme
 
 安装器只修改静态 Web 前端文件，**不会**修改 Host 配置、Agent、会话、工具、模型设置或聊天数据。
 
-## 手动安装
+## 两种安装方式
+
+### 方式一：独立安装版
+
+不依赖第三方皮肤插件，直接将主题作为可逆静态层安装到当前 Harness Web 前端。适合只使用原版 DeepSeek Harness，或希望保留当前完整图标与动态权限菜单适配的用户。
 
 克隆或下载仓库，然后在仓库根目录打开 PowerShell：
 
@@ -83,6 +87,24 @@ Set-ExecutionPolicy -Scope Process Bypass
 ```
 
 安装后刷新原有 Harness 页面。如果浏览器仍使用旧缓存，请按 **Ctrl+F5**。
+
+### 方式二：dsh-web 皮肤中心版
+
+如果已经使用社区项目 [dsh-web](https://github.com/zhu1090093659/dsh-web) 的皮肤中心，可以安装本仓库提供的 Skin Center v2 纯资产版本：
+
+```powershell
+# 先确保皮肤中心插件已经安装；首次安装插件后需由用户重启 dsh web
+dsh plugin --profile web add @linxin666/dsh-client-ui-skin-center@latest
+
+# 在本仓库根目录安装 Whale-chan 皮肤
+.\integrations\dsh-web-skin\install-skin.ps1
+```
+
+随后进入 **设置 -> 皮肤中心**，选择 **Whale-chan 鲸鱼娘**进行试穿或应用。该版本不会修改 `index.html`，Harness 更新后通常更易保留；但用户目录皮肤不能执行未经市场审核的 Hooks，因此不包含独立版浮动开关和动态权限文本打标。
+
+详细说明：[`integrations/dsh-web-skin/README.zh.md`](integrations/dsh-web-skin/README.zh.md)。
+
+> dsh-web 皮肤中心属于独立的非官方社区项目。其文档说明浏览器包包含每日一次匿名安装心跳；该行为不属于本仓库的 Whale-chan 皮肤资产，独立安装版不会增加遥测。
 
 ## 更新主题
 
@@ -156,7 +178,9 @@ dsh.whalechan.theme.enabled
 ├── verify.ps1                   # 离线及可选 HTTP 验证
 ├── scripts/
 │   └── Theme.Common.ps1         # 路径探测与 HTML 清理公共函数
-├── theme/                       # 可直接安装的运行时资源
+├── theme/                       # 独立安装版运行时资源
+├── integrations/
+│   └── dsh-web-skin/            # Skin Center v2 纯资产兼容版本
 ├── docs/
 │   ├── TECHNICAL.md
 │   ├── ASSETS-AND-LICENSING.md

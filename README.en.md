@@ -40,7 +40,11 @@ The installer modifies only static Web frontend files. It does **not** change Ho
 
 If you are already using DeepSeek Harness or another coding Agent, copy the ready-made prompt from [`docs/AGENT-INSTALL-PROMPT.md`](docs/AGENT-INSTALL-PROMPT.md). The prompt asks the Agent to clone or update this repository, run the safe installer, locate the active Harness frontend when necessary, verify all assets, and report exactly what changed without touching user data.
 
-## Manual installation
+## Two installation options
+
+### Option 1: standalone installer
+
+This option has no third-party skin dependency and installs a reversible static layer into the current Harness Web frontend. Use it with stock DeepSeek Harness or when the complete current icon set and dynamic permission-menu adaptation are preferred.
 
 Clone or download this repository, then open PowerShell in its root:
 
@@ -60,6 +64,24 @@ The installer attempts to locate the active `dsh-web-frontend/dist` automaticall
 ```
 
 Refresh the existing Harness page after installation. If the browser cached old assets, press **Ctrl+F5**.
+
+### Option 2: dsh-web Skin Center edition
+
+If you use the community [dsh-web](https://github.com/zhu1090093659/dsh-web) Skin Center, install the included declarative Skin Center v2 package:
+
+```powershell
+# Ensure Skin Center is installed. Its first plugin installation requires a user restart of dsh web.
+dsh plugin --profile web add @linxin666/dsh-client-ui-skin-center@latest
+
+# From this repository root, install the Whale-chan skin
+.\integrations\dsh-web-skin\install-skin.ps1
+```
+
+Open **Settings -> Skin Center**, select **Whale-chan Harness**, and Try on or Apply it. This edition does not patch `index.html` and generally survives Harness upgrades more naturally. User-directory skins cannot execute unreviewed hooks, so this edition omits the standalone floating toggle and dynamic permission-text tagging.
+
+Details: [`integrations/dsh-web-skin/README.md`](integrations/dsh-web-skin/README.md).
+
+> dsh-web Skin Center is an independent unofficial community project. Its documentation discloses one anonymous installation heartbeat per day from its browser package. That behavior is not part of the Whale-chan skin assets; the standalone installer adds no telemetry.
 
 ## Update
 
@@ -126,7 +148,9 @@ See [`docs/TECHNICAL.md`](docs/TECHNICAL.md) for implementation and compatibilit
 ├── verify.ps1              # Offline and optional HTTP validation
 ├── scripts/
 │   └── Theme.Common.ps1    # Shared path discovery and HTML cleanup
-├── theme/                   # Ready-to-install runtime assets
+├── theme/                   # Standalone ready-to-install runtime assets
+├── integrations/
+│   └── dsh-web-skin/        # Declarative Skin Center v2 edition
 ├── docs/
 │   ├── TECHNICAL.md
 │   └── ASSETS-AND-LICENSING.md

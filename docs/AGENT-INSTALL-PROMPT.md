@@ -8,6 +8,11 @@ https://github.com/online111111/whalechan-dsh-theme
 
 Goal: safely install the theme into the DeepSeek Harness Web GUI that I actually use, preserve reversibility, and complete verification.
 
+Installation choice:
+- If `@linxin666/dsh-client-ui-skin-center` or the dsh-web aggregate is already installed, ask whether I prefer the `integrations/dsh-web-skin` Skin Center edition.
+- If Skin Center is absent, I explicitly request the standalone edition, or full dynamic permission-menu behavior is required, use the root `install.ps1`.
+- Do not install both editions at the same time because their styles would overlap.
+
 Requirements:
 1. Inspect the operating system, current working directory, Git, and PowerShell first. Determine real paths with pwd/Get-Location; do not infer them from examples.
 2. Clone the repository into a suitable normal directory. If it already exists, inspect its Git status and origin. Use git pull --ff-only only when the worktree is clean and the remote is correct. Never overwrite unrelated files or force-reset local changes.

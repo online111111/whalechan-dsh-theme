@@ -8,6 +8,11 @@ https://github.com/online111111/whalechan-dsh-theme
 
 目标：在我当前实际使用的 DeepSeek Harness Web GUI 中安全安装主题，保持可逆，并完成验证。
 
+安装方式选择：
+- 如果本机已经安装并使用 `@linxin666/dsh-client-ui-skin-center` 或 dsh-web 全家桶，优先询问我是否使用 `integrations/dsh-web-skin` 的皮肤中心版本；
+- 如果没有皮肤中心、我明确要求独立版本，或需要完整动态权限菜单行为，则使用仓库根目录的 `install.ps1`；
+- 不要同时安装两种版本，避免样式叠加。
+
 执行要求：
 1. 先检查当前操作系统、工作目录、Git 和 PowerShell 是否可用；使用 pwd/Get-Location 确定实际目录，不要根据示例猜测路径。
 2. 将仓库克隆到一个合适的普通目录；如果本地已经存在仓库，先检查 Git 状态和 origin，只在工作区干净且远程正确时使用 git pull --ff-only。不要覆盖我的其他文件或强制重置。

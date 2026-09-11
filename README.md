@@ -6,16 +6,25 @@
 
 > **非官方社区项目。** 本仓库不隶属于 DeepSeek，也没有获得 DeepSeek 的维护、认可或背书。“DeepSeek”及相关标识归各自权利方所有。Whale-chan 设计方向参考 Neko3000 的社区 **DeepSeek Whale-chan Project**，详情请阅读 [`ATTRIBUTION.md`](ATTRIBUTION.md)。
 
-## 主要功能
+## 主要功能和效果展示
 
 本主题会替换或适配：
 
 - DeepSeek Harness 品牌标志：Whale-chan 骑在经典黑色鲸鱼上；
 - 工作区、文件管理器、输入区、会话和面板控制图标；
+  
+  <img width="776" height="338" alt="image" src="https://github.com/user-attachments/assets/ef21a590-15bf-4d4e-9382-4c7371aa718a" />
+
 - 推理、Compact/上下文、Tool Call 和命令卡片；
 - Harness 内置工具使用各自专属图标；MCP、用户自定义及未知工具统一使用通用 Tool Call 图标；
+
+  <img width="699" height="494" alt="image" src="https://github.com/user-attachments/assets/23f4c8b9-1906-4161-b0c6-42244bb8f271" />
+
 - Read Only、Workspace Write、Full access 三档权限使用独立护盾；
+
 - 活跃会话和子代理状态图标，同时保留动态上下文计量信息。
+  <img width="718" height="227" alt="image" src="https://github.com/user-attachments/assets/7896c90d-5c96-49e7-8be7-3018c366bb70" />
+
 
 功能辨识度优先：多数图标保留标准 UI 轮廓，只加入克制的 Whale-chan、鲸尾、珍珠和海洋元素。
 

@@ -1,5 +1,7 @@
 # Whale-chan Theme for DeepSeek Harness
 
+[简体中文](README.zh-CN.md) · **English**
+
 A reversible community fan-art theme for the DeepSeek Harness Web GUI. It adds a marine-blue visual system, Whale-chan-inspired controls and status art, dedicated icons for built-in Harness tools, and a persistent on-page theme toggle.
 
 > **Unofficial community project.** This repository is not affiliated with, endorsed by, or maintained by DeepSeek. “DeepSeek” and related marks belong to their respective owners. The Whale-chan direction references the community **DeepSeek Whale-chan Project** by **Neko3000**; see [`ATTRIBUTION.md`](ATTRIBUTION.md).
@@ -26,7 +28,11 @@ Functional clarity takes priority: most icons preserve familiar UI silhouettes a
 
 The installer modifies only static Web frontend files. It does **not** change Host configuration, agents, sessions, tools, model settings or conversation data.
 
-## Installation
+## Install with a coding Agent
+
+If you are already using DeepSeek Harness or another coding Agent, copy the ready-made prompt from [`docs/AGENT-INSTALL-PROMPT.md`](docs/AGENT-INSTALL-PROMPT.md). The prompt asks the Agent to clone or update this repository, run the safe installer, locate the active Harness frontend when necessary, verify all assets, and report exactly what changed without touching user data.
+
+## Manual installation
 
 Clone or download this repository, then open PowerShell in its root:
 

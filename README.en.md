@@ -6,16 +6,24 @@ A reversible community fan-art theme for the DeepSeek Harness Web GUI. It adds a
 
 > **Unofficial community project.** This repository is not affiliated with, endorsed by, or maintained by DeepSeek. “DeepSeek” and related marks belong to their respective owners. The Whale-chan direction references the community **DeepSeek Whale-chan Project** by **Neko3000**; see [`ATTRIBUTION.md`](ATTRIBUTION.md).
 
-## Features
+## Features and screenshots
 
 The theme replaces or adapts:
 
 - DeepSeek Harness brand mark with Whale-chan riding the black whale;
 - workspace, file-manager, composer, session and panel controls;
+
+  <img width="776" height="338" alt="Whale-chan brand, workspace, sidebar, and session controls" src="https://github.com/user-attachments/assets/ef21a590-15bf-4d4e-9382-4c7371aa718a" />
+
 - reasoning, compact/context, tool-call and command surfaces;
 - built-in Harness tool icons, while MCP/user-defined tools use one generic tool-call icon;
+
+  <img width="699" height="494" alt="Whale-chan built-in tool and command icons" src="https://github.com/user-attachments/assets/23f4c8b9-1906-4161-b0c6-42244bb8f271" />
+
 - permission levels with separate Read Only, Workspace Write and Full access shields;
 - active-session and subagent status indicators without hiding dynamic context-meter data.
+
+  <img width="718" height="227" alt="Whale-chan active-session and subagent status indicators" src="https://github.com/user-attachments/assets/7896c90d-5c96-49e7-8be7-3018c366bb70" />
 
 Functional clarity takes priority: most icons preserve familiar UI silhouettes and add only restrained marine/Whale-chan motifs.
 

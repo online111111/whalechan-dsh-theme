@@ -24,6 +24,8 @@
 
 - 活跃会话和子代理状态图标，同时保留动态上下文计量信息。
   <img width="718" height="227" alt="image" src="https://github.com/user-attachments/assets/7896c90d-5c96-49e7-8be7-3018c366bb70" />
+  <img width="558" height="350" alt="image" src="https://github.com/user-attachments/assets/7170216f-5350-4a26-acc5-bbf5e4e83b2c" />
+
 
 
 功能辨识度优先：多数图标保留标准 UI 轮廓，只加入克制的 Whale-chan、鲸尾、珍珠和海洋元素。

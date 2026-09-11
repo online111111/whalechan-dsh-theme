@@ -6,44 +6,6 @@
 
 > **非官方社区项目。** 本仓库不隶属于 DeepSeek，也没有获得 DeepSeek 的维护、认可或背书。“DeepSeek”及相关标识归各自权利方所有。Whale-chan 设计方向参考 Neko3000 的社区 **DeepSeek Whale-chan Project**，详情请阅读 [`ATTRIBUTION.md`](ATTRIBUTION.md)。
 
-## 界面预览
-
-<p align="center">
-  <img src="docs/images/overview.png" alt="Whale-chan 主题整体界面预览" width="100%">
-</p>
-
-> 整体界面：品牌标志、工作区、会话列表、内置工具图标、目标与任务区域、输入框和主题开关采用统一的海洋系 Whale-chan 视觉语言。
-
-### 图标系统与明暗界面
-
-<p align="center">
-  <img src="docs/images/icon-system.png" alt="Whale-chan 图标系统与明暗界面适配" width="86%">
-</p>
-
-图标采用适合 16–24 px 小尺寸显示的清晰轮廓，并同时检查浅色与深色背景下的辨识度。
-
-### 品牌与交互细节
-
-<table>
-  <tr>
-    <td width="50%" align="center"><strong>品牌标志与侧边栏</strong></td>
-    <td width="50%" align="center"><strong>三档权限专属护盾</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/images/brand-and-sidebar.png" alt="Whale-chan 骑鲸品牌标志和侧边栏" width="100%"></td>
-    <td align="center"><img src="docs/images/permission-levels.png" alt="Read Only、Workspace Write 和 Full access 权限图标" width="75%"></td>
-  </tr>
-  <tr>
-    <td align="center">Whale-chan 骑在经典黑色鲸鱼上，并延伸到新会话及工作区控制。</td>
-    <td align="center">Read Only、Workspace Write、Full access 使用三枚容易区分的专属护盾。</td>
-  </tr>
-</table>
-
-<p align="center">
-  <img src="docs/images/theme-toggle.png" alt="鲸鱼娘主题页面开关" width="300">
-</p>
-<p align="center"><sub>页面内主题开关：可以随时临时恢复原生界面，无需卸载文件。</sub></p>
-
 ## 主要功能
 
 本主题会替换或适配：

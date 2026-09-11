@@ -6,6 +6,44 @@ A reversible community fan-art theme for the DeepSeek Harness Web GUI. It adds a
 
 > **Unofficial community project.** This repository is not affiliated with, endorsed by, or maintained by DeepSeek. “DeepSeek” and related marks belong to their respective owners. The Whale-chan direction references the community **DeepSeek Whale-chan Project** by **Neko3000**; see [`ATTRIBUTION.md`](ATTRIBUTION.md).
 
+## Interface preview
+
+<p align="center">
+  <img src="docs/images/overview.png" alt="Whale-chan theme interface overview" width="100%">
+</p>
+
+> Full interface: the brand mark, workspaces, session list, built-in tool icons, goals/tasks, composer, and theme toggle share one cohesive marine Whale-chan visual language.
+
+### Icon system and light/dark surfaces
+
+<p align="center">
+  <img src="docs/images/icon-system.png" alt="Whale-chan icon system on light and dark surfaces" width="86%">
+</p>
+
+Icons preserve clear silhouettes at 16–24 px and are checked for legibility on both light and dark backgrounds.
+
+### Brand and interaction details
+
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>Brand mark and sidebar</strong></td>
+    <td width="50%" align="center"><strong>Dedicated permission shields</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/brand-and-sidebar.png" alt="Whale-chan riding the whale brand mark and sidebar" width="100%"></td>
+    <td align="center"><img src="docs/images/permission-levels.png" alt="Read Only, Workspace Write and Full access icons" width="75%"></td>
+  </tr>
+  <tr>
+    <td align="center">Whale-chan rides the classic black whale, with matching New Session and workspace controls.</td>
+    <td align="center">Read Only, Workspace Write, and Full access receive three visually distinct shields.</td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="docs/images/theme-toggle.png" alt="Whale-chan theme toggle" width="300">
+</p>
+<p align="center"><sub>The in-page toggle temporarily restores the native interface without uninstalling files.</sub></p>
+
 ## Features
 
 The theme replaces or adapts:
